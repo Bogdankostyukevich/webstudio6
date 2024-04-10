@@ -1,0 +1,83 @@
+/* /////////////////// кнопка ////////////////// */
+.clik {
+    box-sizing: border-box;
+    display: inline-flex;
+
+    position: relative;
+
+    overflow: hidden;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+
+    width: 170px;
+    height: 50px;
+
+    border-radius: 4px;
+    border: solid 2px orange;
+
+    padding: 15px 30px;
+    margin: 25px;
+
+    background-color: teal;
+    color: orange;
+}
+
+.clik:hover {
+    color: red;
+    border: solid 2px red;
+}
+
+.clik::before {
+    content: "";
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    background-image: url(../images/s.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-right: 10px;
+
+    transition: transform 300ms var(--transform);
+}
+
+.clik:hover::before {
+
+    transform: translateY(-50px);
+    
+}
+
+.clik::after {
+    content: "";
+    position: absolute;
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    top: 50%;
+    left: 40px;
+
+    background-image: url(../images/mm.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transform: translateY(calc(-50% + 50px));
+
+    transition: transform 300ms var(--transform);
+}
+
+.clik:hover::after {
+    transform: translateY(-50%);
+}

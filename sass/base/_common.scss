@@ -1,0 +1,23 @@
+/* глобальний селектор */
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+.color__title {
+    color: var(--primeri-title-color);
+}

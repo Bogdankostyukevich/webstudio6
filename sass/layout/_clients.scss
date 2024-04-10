@@ -1,0 +1,39 @@
+/* постійні клієнти */
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    padding-top: 95px;
+}
+
+.clients-list{
+    display: inline-flex;
+
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 95px;
+}
+
+.clients-list__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--clients-color);
+    border-radius: 4px;
+    cursor: pointer;
+
+    padding: 16px 32px;
+}
+
+.clients-list__item + .clients-list__item {
+    margin-left: 30px;
+}
+
+.clients-list__icon {
+    fill: var(--clients-color);
+}

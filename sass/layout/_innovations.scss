@@ -1,0 +1,46 @@
+/* іноваційні рішення */
+.innovations {
+    margin-bottom: 95px;
+}
+
+.innovations-list {
+    display: flex;
+}
+
+.innovations-list__item {
+    width: calc((100% - 90px) / 4);
+
+    margin-right: 30px;
+}
+
+.innovations-list__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.innovations-list__icon {
+    background-color: var(--background-teat-section);
+
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+
+    margin-bottom: 30px;
+    padding: 25px 100px;
+}
+
+.innovations-list__title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+}
+
+.innovations-list__text,
+.address,
+.footer-list__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}

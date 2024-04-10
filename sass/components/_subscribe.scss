@@ -1,0 +1,62 @@
+/* підписка */
+.subscribe {
+    margin-left: 93px;
+}
+
+.subscribe__title {
+    margin-bottom: 20px;
+}
+
+.subscribe__box {
+    display: flex;
+    flex-direction: row;
+}
+
+.subscribe__form {
+    margin-right: 12px;
+}
+
+.subscribe__form input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: var(--background);
+    caret-color: var(--white-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.subscribe__form input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--footer-contacts-color)
+}
+
+.subscribe__box button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.button__icon {
+    margin-left: 10px;
+
+    top: 50%;
+}

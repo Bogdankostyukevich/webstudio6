@@ -1,0 +1,19 @@
+/* логотип */
+.logo__color-blue {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+
+    color: var(--accent-color);
+}
+
+.logo__color-black {
+    color: var(--primeri-title-color);
+}
+
+/* логотип-футер */
+.logo__color-white,
+.address {
+    color: var(--white-color);
+}

@@ -1,0 +1,63 @@
+/* приклади робіт */
+.work {
+    margin-bottom: 95px;
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.work-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+}
+
+.work-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work-list__item {
+    width: 100%;
+    position: relative;
+}
+
+.img-thumb::before {
+    content:"";
+    position: absolute;
+    display: inline-block;
+
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.img-thumb__image {
+    display: block;
+    width: 100%;
+}
+
+.img-thumb__text {
+    display: inline-block;
+    position: absolute;
+
+    bottom: 0;
+    padding: 27px 95px; 
+
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+
+}

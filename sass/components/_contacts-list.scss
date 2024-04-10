@@ -1,0 +1,36 @@
+/* контакти */
+.contacts-list {
+    display: flex;
+
+    margin-left: auto;
+}
+
+.contacts-list .contacts-list__item + .contacts-list__item {
+    margin-left: 50px;
+}
+
+.contacts-list__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+
+    color: var(--primeri-text-color);
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.contacts-list__link:hover,
+.contacts-list__link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* іконки svg */
+.contacts-list__icon {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    fill: currentColor;
+    margin-right: 10px;
+}

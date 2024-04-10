@@ -1,0 +1,85 @@
+/* соціальні мережі */
+.social-networks {
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+
+.social-networks__list {
+    color: var(--clients-color);
+    background-color: var(--white-color);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--transform);
+}
+
+.social-networks__list:hover {
+    background-color: var(--accent-color);
+    fill: #fff;
+}
+
+.social-networks__list + .social-networks__list {
+    margin-left: 10px;
+}
+
+.social-networks__link {
+    display: flex;
+    fill: var(--clients-color);
+    padding: 12px;
+
+    transition: fill 250ms var(--transform);
+}
+
+.social-networks__link:hover {
+    fill: var(--white-color);
+}
+
+.social-netvorks__icon {
+    align-items: center;
+}
+
+/* постійні клієнти */
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    padding-top: 95px;
+}
+
+.clients-list{
+    display: inline-flex;
+
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 95px;
+}
+
+.clients-list__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--clients-color);
+    border-radius: 4px;
+    cursor: pointer;
+
+    padding: 16px 32px;
+}
+
+.clients-list__item + .clients-list__item {
+    margin-left: 30px;
+}
+
+.clients-list__icon {
+    fill: var(--clients-color);
+}

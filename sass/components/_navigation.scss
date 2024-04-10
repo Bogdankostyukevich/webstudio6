@@ -1,0 +1,68 @@
+/* навігація */
+.navigation-list {
+    display: flex;
+
+    margin-left: 93px;
+}
+
+.navigation-list__item {
+    color: var(--accent-color);
+}
+
+.navigation-list__link::after {
+    content:"";
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    transform: scaleX(0);
+
+    transition: transform 250ms var(--transform);
+}
+
+.navigation-list__link:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation-list__link {
+    display: inline-block;
+    position: relative;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    transition: color 250ms var(--transform);
+}
+
+.navigation-list__link {
+    color: var(--primeri-title-color);
+}
+
+.navigation-list__link:hover,
+.navigation-list__link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.navigation-list__link,
+.contacts-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--transform);
+}
+
+.current {
+    color: var(--accent-color);
+}
