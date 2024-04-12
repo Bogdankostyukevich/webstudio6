@@ -2,7 +2,7 @@
 .footer {
     display:flex;
 
-    background-color: var(--background);
+    background-color: $background;
 
     padding-top: 60px;
     padding-bottom: 60px;
@@ -39,13 +39,13 @@
 }
 
 .footer-list__link {
-    color: var(--footer-contacts-color);
+    color: $footer-contacts-color;
 
-    transition: 250ms color var(--transform);
+    transition: 250ms color $transform;
 }
 
 .footer-list__link:hover,
 .footer-list__link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
     cursor: pointer;
 }

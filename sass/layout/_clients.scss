@@ -23,11 +23,17 @@
 .clients-list__item {
     width: 170px;
     height: 92px;
-    border: 1px solid var(--clients-color);
+    border: 1px solid $clients-color;
     border-radius: 4px;
     cursor: pointer;
 
     padding: 16px 32px;
+
+    transition: border-color 250ms $transform;
+
+    &:hover {
+        border-color: $accent-color;
+    }
 }
 
 .clients-list__item + .clients-list__item {
@@ -35,5 +41,5 @@
 }
 
 .clients-list__icon {
-    fill: var(--clients-color);
+    fill: $clients-color;
 }

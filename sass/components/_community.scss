@@ -1,6 +1,6 @@
 /* ком,юніті */
 .community-title {
-    color: var(--white-color);
+    color: $white-color;
 
     font-weight: 700;
     font-size: 14px;
@@ -19,23 +19,23 @@
     align-items: center;
     justify-content: center;
 
-    background-color: var(--primeri-text-color);
+    background-color: $primeri-text-color;
 
     width: 44px;
     height: 44px;
     border-radius: 50%;
     cursor: pointer;
 
-    transition: background-color 250ms var(--transform);
+    transition: background-color 250ms $transform;
 }
 
 .community-item__list:hover {
-    background-color: var(--accent-color)
+    background-color: $accent-color;
 }
 
 .community-item__icon {
     display: block;
-    fill: var(--white-color);
+    fill: $white-color;
 }
 
 .community-item__list + .community-item__list {

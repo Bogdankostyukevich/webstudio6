@@ -20,10 +20,10 @@
     width: 358px;
     height: 50px;
     padding: 15px 16px;
-    background-color: var(--background);
-    caret-color: var(--white-color);
+    background-color: $background;
+    caret-color: $white-color;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid $footer-contacts-color;
     border-radius: 4px;
 }
 
@@ -32,7 +32,7 @@
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--footer-contacts-color)
+    color: $footer-contacts-color;
 }
 
 .subscribe__box button {
@@ -45,8 +45,8 @@
     line-height: 1.9;
     letter-spacing: 0.06em;
 
-    background-color: var(--accent-color);
-    color: var(--white-color);
+    background-color: $accent-color;
+    color: $white-color;
     cursor: pointer;
 
     width: 200px;

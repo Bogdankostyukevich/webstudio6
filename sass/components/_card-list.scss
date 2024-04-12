@@ -2,12 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     
-    margin-top: calc(-1 * var(--card__set-gap));
-    margin-left: calc(-1 * var(--card__set-gap));
+    margin-top: calc(-1 * $card__set-gap);
+    margin-left: calc(-1 * $card__set-gap);
 }
 
 .card-text__primary {
-    color: var(--primeri-title-color);
+    color: $primeri-title-color;
 
     font-weight: 700;
     font-size: 18px;
@@ -16,7 +16,7 @@
 }
 
 .card-text__secondary {
-    color: var(--primeri-text-color);
+    color: $primeri-text-color;
 
     font-weight: 400;
     font-size: 16px;
@@ -26,10 +26,10 @@
 
 .card-list__item {
     border: 1px solid #eee;
-    margin-top: var(--card__set-gap);
-    margin-left: var(--card__set-gap);
+    margin-top: $card__set-gap;
+    margin-left: $card__set-gap;
 
-    flex-basis: calc(100% / 3 - var(--card__set-gap));
+    flex-basis: calc(100% / 3 - $card__set-gap);
 }
 
 .card-list__item:hover {

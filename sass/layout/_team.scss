@@ -1,6 +1,6 @@
 /* команда професіоналів */
 .team {
-    background-color: var(--background-teat-section);
+    background-color: $background-teat-section;
 
     padding-top: 95px;
     padding-bottom: 95px;
@@ -20,7 +20,7 @@
 
 .team-list__item {
     width: calc((100% - 90px) / 4);
-    background-color: var(--white-color);
+    background-color: $white-color;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
     margin-right: 30px;
@@ -46,7 +46,7 @@
 }
 
 .team-list__secondary-text {
-    color: var(--primeri-text-color);
+    color: $primeri-text-color;
 
     font-weight: 400;
     font-size: 16px;

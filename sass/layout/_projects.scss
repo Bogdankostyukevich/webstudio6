@@ -14,8 +14,8 @@
 
 .projects-list__button {
     font-family: roboto, sans-serif;
-    color: var(--primeri-title-color);
-    background-color: var(--button-color);
+    color: $primeri-title-color;
+    background-color: $background-teat-section;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -25,15 +25,15 @@
     border-radius: 4px;
     padding: 6px 22px;
 
-    transition: background-color 250ms var(--transform),
-    color 250ms var(--transform),
-    box-shadow 250ms var(--transform);
+    transition: background-color 250ms $transform,
+    color 250ms $transform,
+    box-shadow 250ms $transform;
 }
 
 .projects-list__button:hover,
 .projects-list__button:focus {
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    color: $white-color;
+    background-color: $accent-color;
     cursor: pointer;
 
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 

@@ -5,8 +5,8 @@
 }
 
 .social-networks__list {
-    color: var(--clients-color);
-    background-color: var(--white-color);
+    color: $clients-color;
+    background-color: $white-color;
 
     display: inline-flex;
     justify-content: center;
@@ -16,12 +16,12 @@
 
     border-radius: 50%;
 
-    transition: background-color 250ms var(--transform);
+    transition: background-color 250ms $transform;
 }
 
 .social-networks__list:hover {
-    background-color: var(--accent-color);
-    fill: #fff;
+    background-color: $accent-color;
+    fill: $white-color;
 }
 
 .social-networks__list + .social-networks__list {
@@ -30,14 +30,14 @@
 
 .social-networks__link {
     display: flex;
-    fill: var(--clients-color);
+    fill: $clients-color;
     padding: 12px;
 
-    transition: fill 250ms var(--transform);
+    transition: fill 250ms $transform;
 }
 
 .social-networks__link:hover {
-    fill: var(--white-color);
+    fill: $white-color;
 }
 
 .social-netvorks__icon {
@@ -69,7 +69,7 @@
 .clients-list__item {
     width: 170px;
     height: 92px;
-    border: 1px solid var(--clients-color);
+    border: 1px solid $clients-color;
     border-radius: 4px;
     cursor: pointer;
 
@@ -81,5 +81,5 @@
 }
 
 .clients-list__icon {
-    fill: var(--clients-color);
+    fill: $clients-color;
 }

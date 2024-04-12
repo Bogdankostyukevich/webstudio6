@@ -11,13 +11,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: $accent-color;
 
     /* opacity: 0; */
     
     transform: translateY(100%);
 
-    transition: transform 250ms var(--transform);
+    transition: transform 250ms $transform;
 }
 
 .card-list__item--product:hover .overlay-box {
@@ -47,9 +47,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    color: var(--white-color);
+    color: $white-color;
 
-    transition: opacity 250ms var(--transform) 250ms;
+    transition: opacity 250ms $transform 250ms;
 }
 
 .card-list__item--product:hover .overlay-box__text {

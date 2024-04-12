@@ -7,12 +7,12 @@
     width: 100%;
     height: 100%;
 
-    background-color: var(--backdrop-color);
+    background-color: $backdrop-color;
     z-index: 1;
 
     /* display: none; */
 
-    transition: opacity 250ms var(--transform);
+    transition: opacity 250ms $transform;
 }
 
 .backdrop.is-hidden {
@@ -37,10 +37,10 @@
 
     padding: 40px;
 
-    box-shadow: var(--box-shadow-modal);
-    background-color: var(--white-color);
+    box-shadow: $box-shadow-modal;
+    background-color: $white-color;
 
-    transition: transform 250ms var(--transform);
+    transition: transform 250ms $transform;
 }
 
 .button-close {
@@ -54,27 +54,27 @@
  
     border-radius: 100%;
     border: 1px solid;
-    border-color: var(--primeri-text-color);
-    background-color: var(--white-color); 
+    border-color: $primeri-text-color;
+    background-color: $white-color; 
 
-    transition:  border-color 250ms var(--transform);
+    transition:  border-color 250ms $transform;
 }
 
 .button-close:hover {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 
 .button-close > .button-close__icon {
-    fill: var(--primeri-title-color);
+    fill: $primeri-title-color;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: fill 250ms var(--transform),
-    transform 250ms var(--transform);
+    transition: fill 250ms $transform,
+    transform 250ms $transform;
 }
 
 .button-close:hover > .button-close__icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
     transform: scale(1.2);
 }
 
@@ -83,7 +83,7 @@
     font-size: 20px;
     letter-spacing: 0.03em;
 
-    color: var(--primeri-title-color);
+    color: $primeri-title-color;
 
     margin-bottom: 12px;
 }

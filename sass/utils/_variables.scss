@@ -1,27 +1,19 @@
-:root {
-    --primeri-title-color: #212121;
-    --accent-color: #2196f3;
-    --background: #2f303a;
-    --footer-contacts-color: rgba(255, 255, 255, 0.6);
-    --primeri-text-color: #757575;
-    --white-color: #ffffff;
-    --background-teat-section: #f5f4fa;
-    --background-hiro: #c4c4c4;
-    --clients-color:#afb1b8;
-    --box-shadow-modal: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+    $primeri-title-color: #212121;
+    $accent-color: #2196f3;
+    $background: #2f303a;
+    $footer-contacts-color: rgba(255, 255, 255, 0.6);
+    $primeri-text-color: #757575;
+    $white-color: #ffffff;
+    $background-teat-section: #f5f4fa;
+    $background-hiro: #c4c4c4;
+    $clients-color:#afb1b8;
+    $box-shadow-modal: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
     0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 
     rgba(0, 0, 0, 0.12);
-    --backdrop-color: rgba(0, 0, 0, 0.2);
-    --transform: cubic-bezier(0.4, 0, 0.2, 1);
-
-    --primeri-title-color: #212121;
-    --accent-color: #2196f3;
-    --background: #2f303a;
-    --footer-contacts-color: rgba(255, 255, 255, 0.6);
-    --primeri-text-color: #757575;
-    --button-color: #f5f4fa;
-    --white-color: #ffffff;
-    --card__set-gap: 30px;
-    --transform: cubic-bezier(0.4, 0, 0.2, 1);
-
- }
+    $backdrop-color: rgba(0, 0, 0, 0.2);
+    $transform: cubic-bezier(0.4, 0, 0.2, 1);
+    $card__set-gap: 30px;
+    $border-bottom-color: #ececec;
+    $fond-color: rgba(47, 48, 58, 0.8);
+    $textarea-border-collor: rgba(33, 33, 33, 0.2);
+    $button-send-shadow: rgba(0, 0, 0, 0.25);

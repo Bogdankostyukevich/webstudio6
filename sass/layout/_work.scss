@@ -38,7 +38,7 @@
     height: 70px;
     bottom: 0;
 
-    background-color: rgba(47, 48, 58, 0.8);
+    background-color: $fond-color;
 }
 
 .img-thumb__image {
@@ -58,6 +58,5 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--white-color);
-
+    color: $white-color;
 }
