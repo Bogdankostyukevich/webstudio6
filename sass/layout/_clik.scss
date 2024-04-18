@@ -15,7 +15,6 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
 
-
     width: 170px;
     height: 50px;
 
@@ -48,11 +47,10 @@
 
     margin-right: 10px;
 
-    transition: transform 300ms var(--transform);
+    transition: transform 300ms $cubic-bezier;
 }
 
 .clik:hover::before {
-
     transform: translateY(-50px);
     
 }
@@ -75,7 +73,7 @@
 
     transform: translateY(calc(-50% + 50px));
 
-    transition: transform 300ms var(--transform);
+    transition: transform 300ms $cubic-bezier;
 }
 
 .clik:hover::after {

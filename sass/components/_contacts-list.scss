@@ -3,34 +3,41 @@
     display: flex;
 
     margin-left: auto;
+
+    & .contacts-list__item + .contacts-list__item {
+        margin-left: 50px;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+
+        @include font(500, 14px, 0.02em);
+    
+        color: $primeri-text-color;
+    
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
+        &:hover,
+        &:focus {
+        color: $accent-color;
+
+        cursor: pointer;
+        }
+    }
 }
 
-.contacts-list .contacts-list__item + .contacts-list__item {
-    margin-left: 50px;
-}
 
-.contacts-list__link {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-
-    color: $primeri-text-color;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-}
-.contacts-list__link:hover,
-.contacts-list__link:focus {
-    color: $accent-color;
-    cursor: pointer;
-}
 
 /* іконки svg */
 .contacts-list__icon {
+    fill: currentColor;
+    
+    margin-right: 10px;
+
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    fill: currentColor;
-    margin-right: 10px;
 }

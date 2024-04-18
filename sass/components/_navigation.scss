@@ -15,6 +15,9 @@
 
 .navigation-list__link {
     display: inline-block;
+
+    @include font(500, 14px, 0.02em);
+
     position: relative;
 
     color: $primeri-title-color;
@@ -22,45 +25,39 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    transition: color 250ms $transform;
+    transition: color 250ms $cubic-bezier;
 
     &:hover,
     &:focus {
     color: $accent-color;
+
     cursor: pointer;
     }
 
     &::after {
     content:"";
     background-color: $accent-color;
+
     display: block;
+
     position: absolute;
 
     left: 0;
     bottom: 0;
+
     width: 100%;
     height: 4px;
 
     border-radius: 2px;
-    transform: scaleX(0);
 
-    transition: transform 250ms $transform;
+    transform: scaleX(0);
+    @extend %transition;
 
     }
 
     &:hover::after {
         transform: scaleX(1);
     }
-}
-
-
-.navigation-list__link,
-.contacts-list__link {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-
-    transition: color 250ms $transform;
 }
 
 .current {

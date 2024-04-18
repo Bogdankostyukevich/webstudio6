@@ -21,3 +21,8 @@ body {
 .color__title {
     color: $primeri-title-color;
 }
+
+.card-set__title,
+.projects__title {
+    display: none;
+}

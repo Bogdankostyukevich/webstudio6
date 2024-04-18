@@ -13,40 +13,18 @@
 
     max-width: 1600px;
     height: 600px;
+    
     padding-top: 200px;
     padding-bottom: 200px;
     margin-bottom: 95px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .hiro-title {
     color: $white-color;
 
+    @include font_lh(900, 44px, 0.06em, 1.36);
+
     padding-bottom: 30px;
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-}
-
-.hiro-button {
-    background-color: $accent-color;
-    color: $white-color;
-    min-width: 200px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    border: 1px solid transparent;
-    border-radius: 4px;
-
-    cursor: pointer;
 }

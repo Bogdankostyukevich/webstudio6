@@ -2,9 +2,8 @@
 .community-title {
     color: $white-color;
 
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 0.03em);
+
     text-transform: uppercase;
 
     margin-bottom: 20px;
@@ -12,32 +11,35 @@
 
 .community-item{
     display: inline-flex;
-}
 
-.community-item__list {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    &__list {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: $primeri-text-color;
+    
+        width: 44px;
+        height: 44px;
 
-    background-color: $primeri-text-color;
+        border-radius: 50%;
+        
+        cursor: pointer;
+    
+        transition: background-color 250ms $cubic-bezier;
+    }
 
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    cursor: pointer;
-
-    transition: background-color 250ms $transform;
-}
-
-.community-item__list:hover {
-    background-color: $accent-color;
-}
-
-.community-item__icon {
-    display: block;
-    fill: $white-color;
+    &__list:hover {
+        background-color: $accent-color;
+    }
 }
 
 .community-item__list + .community-item__list {
     margin-left: 10px;
+}
+
+.community-item__icon {
+    display: block;
+    
+    fill: $white-color;
 }

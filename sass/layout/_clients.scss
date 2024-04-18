@@ -1,9 +1,8 @@
 /* постійні клієнти */
 .clients-title {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
     text-align: center;
+
+    @include font(700, 36px, 0.03em);
 
     padding-top: 95px;
 }
@@ -11,28 +10,27 @@
 .clients-list{
     display: inline-flex;
 
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
     text-align: center;
 
     padding-top: 50px;
     padding-bottom: 95px;
-}
 
-.clients-list__item {
-    width: 170px;
-    height: 92px;
-    border: 1px solid $clients-color;
-    border-radius: 4px;
-    cursor: pointer;
+    &__item {
+        width: 170px;
+        height: 92px;
 
-    padding: 16px 32px;
+        border: 1px solid $clients-color;
+        border-radius: 4px;
 
-    transition: border-color 250ms $transform;
-
-    &:hover {
-        border-color: $accent-color;
+        cursor: pointer;
+    
+        padding: 16px 32px;
+    
+        transition: border-color 250ms $cubic-bezier;
+    
+        &:hover {
+            border-color: $accent-color;
+        }
     }
 }
 

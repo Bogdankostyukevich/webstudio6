@@ -4,41 +4,33 @@
     
     margin-top: calc(-1 * $card__set-gap);
     margin-left: calc(-1 * $card__set-gap);
+
+    &__item {
+        border: 1px solid #eee;
+        
+        margin-top: $card__set-gap;
+        margin-left: $card__set-gap;
+    
+        flex-basis: calc(100% / 3 - $card__set-gap);
+
+        &:hover {
+            box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
+            0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 
+            rgba(0, 0, 0, 0.12);
+        }
+    }
 }
 
 .card-text__primary {
     color: $primeri-title-color;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font_lh(700, 18px, 0.06em, 2);
 }
 
 .card-text__secondary {
     color: $primeri-text-color;
 
-    font-weight: 400;
-    font-size: 16px;
+    @include font(400, 16px, 0.03em);
+
     line-height: 1.9;
-    letter-spacing: 0.03em;
-}
-
-.card-list__item {
-    border: 1px solid #eee;
-    margin-top: $card__set-gap;
-    margin-left: $card__set-gap;
-
-    flex-basis: calc(100% / 3 - $card__set-gap);
-}
-
-.card-list__item:hover {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
-    0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 
-    rgba(0, 0, 0, 0.12);
-}
-
-.card-list__picture {
-    display: block;
-    width: 100%;
 }

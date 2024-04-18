@@ -1,9 +1,8 @@
 /* логотип */
 .logo {
     font-family: raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
+
+    @include font(700, 26px, 0.03em);
 }
 
 .logo__color-blue {

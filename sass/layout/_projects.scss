@@ -6,37 +6,39 @@
 .projects-list {
     display: flex;
     justify-content: center;
-}
 
-.projects-list__item:not(:last-child) {
-    margin-right: 8px;
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
 }
 
 .projects-list__button {
-    font-family: roboto, sans-serif;
     color: $primeri-title-color;
     background-color: $background-teat-section;
-    font-weight: 500;
-    font-size: 16px;
+
+    @include font(500, 16px, 0.03em);
+
     line-height: 1.6;
-    letter-spacing: 0.03em;
 
     border: 1px solid transparent;
     border-radius: 4px;
+    
     padding: 6px 22px;
 
-    transition: background-color 250ms $transform,
-    color 250ms $transform,
-    box-shadow 250ms $transform;
-}
+    transition: background-color 250ms $cubic-bezier,
+    color 250ms $cubic-bezier,
+    box-shadow 250ms $cubic-bezier;
 
-.projects-list__button:hover,
-.projects-list__button:focus {
+    &:hover,
+    &:focus {
     color: $white-color;
     background-color: $accent-color;
+
     cursor: pointer;
 
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 
     0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 
     rgba(0, 0, 0, 0.1);
+    }
 }
+

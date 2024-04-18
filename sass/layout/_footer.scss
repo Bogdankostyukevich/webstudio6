@@ -14,12 +14,6 @@
     margin-bottom: 20px;
 }
 
-/* логотип-футер */
-/* .logo__color-white,
-.address {
-    color: var(--white-color);
-} */
-
 .container-address {
     margin-right: 70px;
 }
@@ -29,8 +23,10 @@
 }
 
 .address {
-    margin-bottom: 9px;
+    @include font_lh(400, 14px, 0.03em, 1.7);
 
+    margin-bottom: 9px;
+    
     font-style: normal;
 }
 
@@ -41,11 +37,20 @@
 .footer-list__link {
     color: $footer-contacts-color;
 
-    transition: 250ms color $transform;
+    @include font_lh(400, 14px, 0.03em, 1.7);
+    
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+
+    cursor: pointer
+    }
 }
 
-.footer-list__link:hover,
-.footer-list__link:focus {
-    color: $accent-color;
-    cursor: pointer;
-}
+/* логотип-футер */
+/* .logo__color-white,
+.address {
+    color: var(--white-color);
+} */

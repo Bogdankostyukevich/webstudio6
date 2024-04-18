@@ -1,85 +1,50 @@
 /* соціальні мережі */
 .social-networks {
     display: inline-flex;
+
     margin-bottom: 30px;
-}
 
-.social-networks__list {
-    color: $clients-color;
-    background-color: $white-color;
+    &__list {
+        color: $clients-color;
+        background-color: $white-color;
+    
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
+        width: 44px;
+        height: 44px;
+    
+        border-radius: 50%;
+    
+        transition: background-color 250ms $cubic-bezier;
+    }
 
-    border-radius: 50%;
+    &__list:hover {
+        background-color: $accent-color;
 
-    transition: background-color 250ms $transform;
-}
+        fill: $white-color;
+    }
 
-.social-networks__list:hover {
-    background-color: $accent-color;
-    fill: $white-color;
-}
-
-.social-networks__list + .social-networks__list {
-    margin-left: 10px;
+    &__list + &__list {
+        margin-left: 10px;
+    }
 }
 
 .social-networks__link {
     display: flex;
+
     fill: $clients-color;
+    
     padding: 12px;
 
-    transition: fill 250ms $transform;
-}
+    transition: fill 250ms $cubic-bezier;
 
-.social-networks__link:hover {
-    fill: $white-color;
+    &:hover {
+        fill: $white-color;
+    }
 }
 
 .social-netvorks__icon {
     align-items: center;
-}
-
-/* постійні клієнти */
-.clients-title {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-
-    padding-top: 95px;
-}
-
-.clients-list{
-    display: inline-flex;
-
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-
-    padding-top: 50px;
-    padding-bottom: 95px;
-}
-
-.clients-list__item {
-    width: 170px;
-    height: 92px;
-    border: 1px solid $clients-color;
-    border-radius: 4px;
-    cursor: pointer;
-
-    padding: 16px 32px;
-}
-
-.clients-list__item + .clients-list__item {
-    margin-left: 30px;
-}
-
-.clients-list__icon {
-    fill: $clients-color;
 }
