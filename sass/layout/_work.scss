@@ -12,53 +12,87 @@
 }
 
 .work-list {
-    display: flex;
+
+    @media screen and (min-width: 1230px) {
+        display: flex;
+    }
 
     &__item {
         width: 100%;
 
         position: relative;
+
+    @media screen and (max-width: 479px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;  
+        }
     }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: 1230px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 }
 
 .img-thumb::before {
     content:"";
 
+    background-color: $fond-color;
+
     position: absolute;
-    
+
     display: inline-block;
 
     width: 100%;
     height: 70px;
 
     bottom: 0;
-
-    background-color: $fond-color;
 }
 
 .img-thumb__image {
     display: block;
 
     width: 100%;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        margin-bottom: 0;
+    }
 }
 
 .img-thumb__text {
     display: inline-block;
+
     position: absolute;
 
-    @include font(700, 14px, 0.03em);
-
     bottom: 0;
-    padding: 27px 95px; 
-
+    
     text-transform: uppercase;
 
     color: $white-color;
+
+    @include font(700, 14px, 0.03em);
+
+    @media screen and (min-width: 480px) {
+        padding: 26px 140px;
+    }
+
+    @media screen and (max-width: 479px) {
+        text-align: center;  
+        }
+
+    @media screen and (min-width: 768px) {
+        padding: 25px 285px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        padding: 27px 95px; 
+    }
 }
 
-
+}
 

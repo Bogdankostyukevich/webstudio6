@@ -1,30 +1,53 @@
 /* секція герой */
 .hiro {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.4), 
-        rgba(47,48,58,0.4)),
-    url(../images/bg-photo.jpg);
-    background-color: $background;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        background-image: linear-gradient(
+            rgba(0,0,0,0.4), 
+            rgba(47,48,58,0.4)),
+            url(../images/bg-photo.jpg);
+            background-color: $background;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+            text-align: center;
+            
+            height: 600px;
+            
+            padding-top: 200px;
+            padding-bottom: 200px;
+            margin-bottom: 95px;
+            margin-left: auto;
+            margin-right: auto;
 
-    text-align: center;
+            @media screen and (min-width: 480px) {
+                width: 480px;
+            }
+        
+            @media screen and (min-width: 768px) {
+                width: 768px;
+            }
 
-    max-width: 1600px;
-    height: 600px;
-    
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-bottom: 95px;
-    margin-left: auto;
-    margin-right: auto;
+            @media screen and (min-width: 1230px) {
+                width: 1230px;
+            }
 }
+
 
 .hiro-title {
     color: $white-color;
-
-    @include font_lh(900, 44px, 0.06em, 1.36);
+    text-transform: uppercase;
 
     padding-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        @include font_lh(900, 26px, 0.06em, 1.62);
+    }
+
+    @media screen and (min-width: 768px) {
+        @include font_lh(900, 26px, 0.06em, 1.62);
+    }
+
+    @media screen and (min-width: 1230px) {
+        @include font_lh(900, 44px, 0.06em, 1.36);
+    }
 }

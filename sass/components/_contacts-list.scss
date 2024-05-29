@@ -1,24 +1,36 @@
 /* контакти */
 .contacts-list {
-    display: flex;
 
-    margin-left: auto;
+    @media screen and (min-width: 480px) {
+        @include font(500, 40px, 0.02em);
+        padding-left: 40px;
+    }
+    // display: flex;
 
-    & .contacts-list__item + .contacts-list__item {
-        margin-left: 50px;
+    // margin-left: auto;
+
+    // & .contacts-list__item + .contacts-list__item {
+    //     margin-left: 50px;
+    // }
+
+    &__item {
+        @media screen and (min-width: 480px) {
+            margin-bottom: 32px;
+        }
     }
 
+
     &__link {
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
+        // display: inline-flex;
+        // align-items: center;
+        // text-decoration: none;
 
         @include font(500, 14px, 0.02em);
     
         color: $primeri-text-color;
     
-        padding-top: 50px;
-        padding-bottom: 50px;
+        // padding-top: 50px;
+        // padding-bottom: 50px;
     
         &:hover,
         &:focus {
@@ -26,18 +38,22 @@
 
         cursor: pointer;
         }
+
+        @media screen and (min-width: 480px) {
+            @include font(500, 34px, 0.02em);
+        }
     }
 }
 
 
 
 /* іконки svg */
-.contacts-list__icon {
-    fill: currentColor;
+// .contacts-list__icon {
+//     fill: currentColor;
     
-    margin-right: 10px;
+//     margin-right: 10px;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
+//     // /* display: flex;
+//     // justify-content: center;
+//     // align-items: center; */
+// }

@@ -1,15 +1,28 @@
 /* навігація */
 .navigation-list {
-    display: flex;
-
-    margin-left: 93px;
-
     &__item {
         color: $accent-color;
+
+        @media screen and (min-width: 480px) {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
     }
 
-    &__item:not(:last-child) {
-        margin-right: 50px;
+    @media screen and (min-width: 480px) {
+
+        padding-top: 48px;
+        padding-left: 40px;
+        margin-bottom: 302px;
+        // display: flex;
+
+        // margin-left: 93px;
+    
+    
+        // &__item:not(:last-child) {
+        //     margin-right: 50px;
+        // }   
     }
 }
 
@@ -22,8 +35,12 @@
 
     color: $primeri-title-color;
 
-    padding-top: 50px;
-    padding-bottom: 50px;
+    @media screen and (min-width: 480px) {
+        @include font(500, 40px, 0.02em);
+    }
+
+    // padding-top: 50px;
+    // padding-bottom: 50px;
 
     transition: color 250ms $cubic-bezier;
 
@@ -52,7 +69,6 @@
 
     transform: scaleX(0);
     @extend %transition;
-
     }
 
     &:hover::after {
@@ -63,3 +79,4 @@
 .current {
     color: $accent-color;
 }
+

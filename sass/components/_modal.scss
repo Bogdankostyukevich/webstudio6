@@ -45,28 +45,6 @@
     @extend %transition;
 }
 
-.button-close {
-    position: absolute;
-
-    top: -8px;
-    right: -8px;
-
-    padding: 5px;
-
-    cursor: pointer;
- 
-    border-radius: 100%;
-    border: 1px solid;
-    border-color: $primeri-text-color;
-    background-color: $white-color; 
-
-    transition:  border-color 250ms $cubic-bezier;
-
-    &:hover {
-        border-color: $accent-color;
-    }
-}
-
 .button-close__icon {
     fill: $primeri-title-color;
 
@@ -87,7 +65,7 @@
 .modal-text {
     color: $primeri-title-color;
 
-    @include font(700, 20px, 0.3em);
+    @include font(700, 20px, 0.03em);
 
     margin-bottom: 12px;
 }

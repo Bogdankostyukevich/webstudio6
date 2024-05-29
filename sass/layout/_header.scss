@@ -2,7 +2,9 @@
 .header {
     display: flex;
 
-    padding-top: 25px;
+    flex-direction: row;
+
+    position: relative;
 }
 
 .header-bottom {

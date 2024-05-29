@@ -1,15 +1,28 @@
 .container {
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
 
-    width: 1230px;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        border: 1px solid red;
+    }
 
-    padding-left: 15px;
-    padding-right: 15px;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    
+    @media screen and (min-width: 1230px) {
+        width: 1230px;
+    }
 }
 
 .main__nav {
+    position: relative;
+
     display: flex;
+
+    flex-direction: row;
     
-    align-items: center;
-}
+    // align-items: center;
+    }

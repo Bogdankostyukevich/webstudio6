@@ -1,25 +1,46 @@
 /* підписка */
 .subscribe {
-    margin-left: 93px;
+    // margin-left: 93px;
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
 }
 
 .subscribe__title {
     margin-bottom: 20px;
 
     @include font(700, 14px, 0.03em);
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1230px) {
+        text-align: left;
+    }
 }
 
 .subscribe__box {
-    display: flex;
+    @media screen and (min-width: 1230px) {
+        display: flex;
+        flex-direction: row;
+    }
 
-    flex-direction: row;
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
 }
 
 .subscribe__form {
-    margin-right: 12px;
+    @media screen and (max-width: 479px) {
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 1230px) {
+        margin-right: 12px;;
+    }
 
     & input {
-        width: 358px;
         height: 50px;
 
         padding: 15px 16px;
@@ -30,6 +51,20 @@
     
         border: 1px solid $footer-contacts-color;
         border-radius: 4px;
+
+        @media screen and (min-width: 480px) {
+            margin-bottom: 20px;
+            width: 450px;
+        }
+
+        @media screen and (max-width: 479px) {
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+
+        @media screen and (min-width: 1230px) {
+            width: 358px;
+        }
     }
 
     & input::placeholder {

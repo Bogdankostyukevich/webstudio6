@@ -21,3 +21,67 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+// модальне вікно
+.button-close {
+    position: absolute;
+
+    top: -8px;
+    right: -8px;
+
+    padding: 8px;
+
+    cursor: pointer;
+ 
+    border-radius: 100%;
+    border: 1px solid;
+    border-color: $primeri-text-color;
+    background-color: $white-color; 
+
+    transition:  border-color 250ms $cubic-bezier;
+
+    &:hover {
+        border-color: $accent-color;
+    }
+}
+
+// бургер меню навігація
+.menu-button {
+
+    @media screen and (min-width: 480px) {
+        
+        cursor: pointer;
+        
+        display: inline-flex;
+        
+        position: absolute;
+        
+        margin: 0;
+        padding: 0;
+        
+        top: 10px;
+        right: 15px;
+        
+        border: none;
+        
+        background-color: transparent;
+        
+        &:hover {
+            fill: $accent-color;
+            
+            transition: fill 250ms $cubic-bezier;
+        }
+        
+        & .icon-cross {
+            display: none;
+        }
+        
+        &.is-open .icon-cross {
+            display: block;
+        }
+        
+        &.is-open .icon-menu {
+            display: none;
+        }
+    }
+}
